@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
     <title>Best Pizza Ever!</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This page is a webpage to learn html">
+    <meta name="keywords" content="html5,excersice,learn,code">
+    <meta name="author" content="Youssef Saleh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
@@ -14,14 +18,40 @@
       <section id="contact-form">
         <h2>Place Order</h2>
         <form class="" action="place-order.php" method="GET">
+
+          <h4>Delivery</h4>
+          <input type="radio" name="deliveryMethod" value="delivery"> Delivery <br>
+          <input type="radio" name="deliveryMethod" value="pickup"> Pickup <br>
+          <br>
+
           <h4>Address</h4>
           <input type="text" name="address1" placeholder="Address Line 1" class="lg-input"><br>
           <input type="text" name="address2" placeholder="Address Line 2" class="lg-input"><br>
           <input type="text" name="city" placeholder="City" class="sm-input">
           <input type="text" name="state" placeholder="State" class="sm-input"><br>
           <input type="text" name="zip" placeholder="Zip Code" class="sm-input"><br>
+          <br>
 
+          <h4>Size</h4>
+          <select class="" name="size">
+            <option value="12">12" - $13.99</option>
+            <option value="16">16" - $16.99</option>
+            <option value="18">18" - $19.99</option>
+            <option value="72">72" - $149.99</option>
+          </select>
+          <br>
 
+          <h4>Ingredients</h4>
+          <input type="checkbox" name="ingredient" value="pepperoni"> Pepperoni <br>
+          <input type="checkbox" name="ingredient" value="salami"> Salami <br>
+          <input type="checkbox" name="ingredient" value="bacon"> Bacon <br>
+          <input type="checkbox" name="ingredient" value="sausage"> Italian Sausage <br>
+          <input type="checkbox" name="ingredient" value="onion"> Onions <br>
+          <input type="checkbox" name="ingredient" value="peppers"> Green Peppers <br>
+          <br><br>
+
+          <button type="submit" name="button">Place Order</button>
+          <br><br>
         </form>
       </section>
     </main>
