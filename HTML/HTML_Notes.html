@@ -1,0 +1,213 @@
+<!-- "DOCTYPE" how the page is rendered "html" is the doctype for html5-->
+<!DOCTYPE html>
+
+<!-- "html" is the first HTML Tag, it represents the root of an HTML doc -->
+<html>
+
+<!-- "head" element is an element for metadata and browser configuration-->
+  <head>
+
+    <!-- "meta" is a self closing tag
+            "charset" is responsible for symboles languages and alphabets, mostly used is "UTF-8
+            "description" is responsible to describe the page and it's displayed in search engines results-->
+    <meta charset="utf-8">
+    <meta name="description" content="This is a super cool website">
+
+    <!-- "title" is the element for page title shown in the browser-->
+    <title>HTML Notes</title>
+
+    <!-- "style" element for CSS code-->
+    <style></style>
+
+    <!-- "script" element for JS code-->
+    <script></script>
+
+    <!-- "link" element for JS code
+            "rel" atribule for the link relation
+            "href" atribule i for hyperlink reference-->
+    <link rel="stylesheet" href="file location">
+
+  </head>
+
+  <!-- "body" element contains all the webpage content-->
+  <body>
+
+    <!--  Attributes
+            global attributes like "hidden", "class", "id" are used for all tags
+            local attributes like "href", "src", "rel" related to specific tags-->
+
+    <!--  Breakline "<br>"-->
+    <!--  Horizonal line "<hr>"-->
+
+    <!--  -------------------------------------------------------------------- -->
+    <!-- "h1 to h6" elements are the heading sizes from largest to smallest
+            spaces and lines between words are ignored -->
+    <h1>This is the largest size - Book Store</h1>
+      <h2>Book name</h2>
+        <h3>Chapter name  | Spaces            and lines                 are
+          ignored                 </h3>
+          <h4>Paragraph title</h4>
+            <h5>Paragraph small font</h5>
+              <h6>This is the smallest size </h6>
+
+
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
+    <!--  Formatting elements
+        b => bold
+        strong => Bold and important for search engines
+        i => italic
+        em => empathasized => italic and important for search engines
+        mark => Marked Text or Highlighred Text with yellow color
+        u => Underline - mostly unused
+        small => smaller text - to mention the author
+        del => deleted text - deleted but still showen - usual change or removed of content weaken search engines trust
+        ins => inserted text - newely added text for reader
+        sup => superscript - "2 power 2"
+        sub =>subscript  - "H2O"-->
+
+    <p><b>Let's</b> <strong>try</strong> <i>some</i> <em>text</em> <mark>to</mark> <u>test</u> <small>the</small> <del>formatting</del> <ins>elements</ins> H<sub>2</sub>O 2<sup>4</sup></p>
+
+
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
+    <!-- "p" element is for paragraphs, it differs than h element by separating the paragraph using spacing before and after the paragraph
+            "lorem" types long paragraph automatically
+            "hidden" attribute hides text from user-->
+    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p hidden>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <br><br>
+
+
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
+    <!-- "a" element for links
+            "href" attribute for link address / email address / file name / same page pointer by id
+            "target" attribute to open link in same tab "_self" or in new tab "_blank
+            "title" attribute for what's shown when pointing -->
+    <a href="https://google.com" target="_blank" title="Go to Google in new tab">Google</a>
+    <a href="https://facebook.com" target="_self" title="Go to Facebook in the same tab">Facebook</a>
+    <a href="HTML_Basics.html" title="Go to html page">HTML page</a>
+    <a href="#link_ID" title="jump to id">jump by ID</a>
+    <a href="mailto:joe@example.com?subject=feedback">email me</a>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p id="link_ID"> Heeeeeeeere Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
+    <!-- "img" element for inserting an image
+            "src" local attribute for image source address / file name
+            "alt" local attribute for alternative  message if image isn't to be displayed
+            "width" attribute for image width in pixels
+            "height" attribute for image height in pixels-->
+
+    <img src="https://lh3.googleusercontent.com/-B7Ceuw70WHS9jq0DoKgCElppshuqbyWYjUQlEzhDL4F0x5RcOOgmJINNr7oFIENviCXOgGP-IOwbfhT6Exn4pk=s400" alt="">
+    <img src="dogPic.jpg" alt="" width="200px" height="200px">
+    <img src="../blablabla.png" alt="Image not found">
+
+
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
+    <!--  Lists -  there are three main types of lists
+            "ul" tag for unordered list
+            "ol" tag for ordered list
+              "reversed" attribute for reversing ordered
+              "start" ol attribute to start form certain number
+              "type" attribute for the ordering type: A, a, 1, I, i
+            "li" tag for list item
+              "value" li attribute to start form certain number-->
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>
+        JS
+        <ol type="I">
+          <li>Angular</li>
+          <li>React</li>
+          <li>Vuejs</li>
+        </ol>
+      </li>
+    </ul>
+
+    <!-- "dl" element for description list
+          "dt" term
+          "dd" the description of the term-->
+
+    <dl>
+      <dt>Term 1</dt>
+        <dd>description 1 of the first term</dd>
+        <dd>description 2 of the first term</dd>
+        <dd>description 3 of the first term</dd>
+      <dt>Term 2</dt>
+        <dd>description 1 of the second term</dd>
+        <dd>description 2 of the second term</dd>
+    </dl>
+
+
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
+    <!--  Tables
+            "table" tag for creating a table
+              "border" attribute for creating border for the table not recommended to use in HTML
+              "cellpadding"  attribute for distancing between cells not recommended to use in HTML
+            "caption" tag as for table's title
+            "thead" tag for table's header rows
+            "tbody" tag for table's content rows
+            "tfoot" tag for table's footer rows - doesn't matter where it's written, it will appear at the end of the table
+            "tr" tag for one row
+            "th" tag for table header cell row
+            "td" tag for table data cell
+              "colspan" for uniting two cells together-->
+
+    <table border="1">
+      <caption>My Table</caption>
+      <thead>
+        <tr>
+          <th>First head</th>
+          <th>Second head</th>
+          <th>Third head</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>10</td>
+          <td>20</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>40</td>
+          <td>50</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td colspan="2">70 & 80</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>First foot</td>
+          <td>Second foot</td>
+          <td>Third foot</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
+    <!--  "span" element to separate certain terms for further editing like paragraph user agent never modifies on it-->
+    <span></span>
+
+    <!-- "div" element division is kinda container for paragraphs and headings including spaces used for further editing -->
+    <div class=""></div>
+
+
+  </body>
+</html>
