@@ -286,16 +286,30 @@
           "action" attribute for processing the data to a specific URL, default ="index.html"
           "method" attribute for URL control "GET" shows info from URL, "POST" hides info from URL
         "label" tag for labeling the input
-        "input" tag to insert an input
+          "for" an attribute to specify the lable for a specific id. Focuses the lable on the id action.
+        "select" a tag for slection list for choosing one or many options as an input
+          "multiple" an attribute to enabling multiple selections
+          "optgroup" a tag to group up some selections within the list
+            "lable" an attribute for naming the optgroup
+              "option" a tag for creating an option to be selected within the selection lists
+                "value" an attribute which is the value to be forwarded as an input for further Sausage
+                "selected" an attribute to select the option as a default option
+        "textarea" a tag to input a text
+          "rows" an attribute for rows size
+          "cols" an attribute for column size
+          "placeholder" a pre written message inside the textarea
+        "input" a tag to insert an input
           "placeholder" attribute shows a prewritten message for input
           "value" attribute to give a default value to the input
           "required" attribute to forces the user to fill the input to continue
           "name" attribute for giving a name to the input for further usage
           "readonly" attribute to noneditable input that is to be sent to further usage
           "disabled" attribute to grey highlight noneditable input that is NOT to be send to further usage
-          "autofocus" attribute to force selection on an input first thing on page start 
+          "autofocus" attribute to force selection on an input first thing on page start
           "minlength" attribute to accept input of minimum X lenghth
           "maxlength" attribute to accept input of maximum X lenghth
+          "checked" attribute to check a choice as default
+          "id" attribute to give an input an id
           "type" attribute to mention the input type
             "text" a type that takes text as input
             "email" a type that allows only email forms
@@ -304,6 +318,14 @@
             "reset" a type of button to reset inputs
             "hidden" a type but hidden to the user
             "color" a type to choose hex code
+            "radio"  a type to choose one option of many choices
+            "checkbox"  a type to choose one or more options of many choices
+            "file" a type to insert a file
+            "search" a type to insert a search, it has a clear button on side
+            "url" a type to insert a URL, it  has an URL indicator
+            "date" a type to insert a full date
+            "month" a type to insert a month and year
+            "time" a type to insert a time
             "range" a type to choose from a range
               "min" an input attribute to choose minimum to the range
               "max" an input attribute to choose maximum to the range
@@ -313,6 +335,7 @@
               "min" an input attribute to choose minimum to the number
               "max" an input attribute to choose maximum to the number
               "step" an input attribute to set each step
+
         -->
     <form class="" action="index.html" method="get">
       <div>
@@ -330,6 +353,73 @@
       <div>
         <label>Password</label>
         <input type="password" required placeholder="write a strong password" name="pass" minlength="10" maxlength="15">
+      </div>
+      <div>
+        <input type="radio" id="win" name="os" value="Windows" checked>
+        <label for="win">Windows</label>
+      </div>
+      <div>
+        <input type="radio" name="os" value="Linux">
+        <label>Linux</label>
+      </div>
+      <div>
+        <input type="radio" name="os" value="Mac">
+        <label>Mac</label>
+      </div>
+      <div>
+        <input type="checkbox" id="win1" name="os" value="Windows" checked>
+        <label for="win1">Windows</label>
+      </div>
+      <div>
+        <input type="checkbox" name="os" value="Linux">
+        <label>Linux</label>
+      </div>
+      <div>
+        <input type="checkbox" name="os" value="Mac">
+        <label>Mac</label>
+      </div>
+      <br><br>
+      <div>
+        <label for="book">Choose Book</label>
+        <select id="book" name="book" multiple>
+          <optgroup label="Romantic Books">
+            <option value="1">Book1</option>
+            <option value="2">Book2</option>
+            <option value="3">Book3</option>
+          </optgroup>
+          <optgroup label="Police Books">
+            <option value="4"selected>Book4</option>
+            <option value="5">Book5</option>
+            <option value="6">Book6</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <textarea name="name" rows="8" cols="80" placeholder="Test Text"></textarea>
+      </div>
+      <div>
+        <label>Upload</label>
+        <input type="file">
+      </div>
+      <div>
+        <label>Search</label>
+        <input type="search">
+      </div>
+      <div>
+        <label>URL</label>
+        <input type="url">
+      </div>
+      <div>
+        <label>Date</label>
+        <input type="date">
+      </div>
+      <div>
+        <label>Month</label>
+        <input type="month">
+      </div>
+      <div>
+        <label>Time</label>
+        <input type="time">
       </div>
       <input type="submit" value="save"> <!-- to change button's name to "save"-->
     </form>
