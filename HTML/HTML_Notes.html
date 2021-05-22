@@ -27,7 +27,9 @@
             "href" atribule i for hyperlink reference-->
     <link rel="stylesheet" href="file location">
 
+
   </head>
+
 
   <!-- "body" element contains all the webpage content-->
   <body>
@@ -37,7 +39,9 @@
             local attributes like "href", "src", "rel" related to specific tags-->
 
     <!--  Breakline "<br>"-->
+
     <!--  Horizonal line "<hr>"-->
+
 
     <!--  -------------------------------------------------------------------- -->
     <!-- "h1 to h6" elements are the heading sizes from largest to smallest
@@ -49,6 +53,16 @@
           <h4>Paragraph title</h4>
             <h5>Paragraph small font</h5>
               <h6>This is the smallest size </h6>
+
+
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
+    <!-- "p" element is for paragraphs, it differs than h element by separating the paragraph using spacing before and after the paragraph
+            "lorem" types long paragraph automatically
+            "hidden" attribute hides text from user-->
+    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p hidden>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <br><br>
 
 
     <hr>
@@ -65,18 +79,41 @@
         ins => inserted text - newely added text for reader
         sup => superscript - "2 power 2"
         sub =>subscript  - "H2O"-->
-
     <p><b>Let's</b> <strong>try</strong> <i>some</i> <em>text</em> <mark>to</mark> <u>test</u> <small>the</small> <del>formatting</del> <ins>elements</ins> H<sub>2</sub>O 2<sup>4</sup></p>
 
 
     <hr>
     <!--  -------------------------------------------------------------------- -->
-    <!-- "p" element is for paragraphs, it differs than h element by separating the paragraph using spacing before and after the paragraph
-            "lorem" types long paragraph automatically
-            "hidden" attribute hides text from user-->
-    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p hidden>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <br><br>
+    <!--  Entities - you can search online for any entity symbole-->
+    <p>This is a text for entities &lt; p &gt; &amp; &asymp; &copy; &copysr;</p>
+
+
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
+    <!--  "span" element to separate certain terms for further editing like paragraph user agent never modifies on it-->
+    <span></span>
+
+
+    <!--  -------------------------------------------------------------------- -->
+    <!-- "div" block element division is kinda container for paragraphs and headings including spaces used for further editing -->
+    <div class=""></div>
+
+
+    <!--  Div variations for anti Div-Soup - instead of Div + class name - presented in HTML5
+          "header" Div element for the Header of a website
+          "nav" Div element for a Navigation Bar of a website
+          "section" Div element for a normal section of a website
+          "main" Div element for the main section of a website
+          "article" Div element for an Article of a website
+          "aside" Div element for a Sidebar of a website
+          "footer" Div element for the footer of a website-->
+    <header></header>
+    <nav></nav>
+    <section></section>
+    <main></main>
+    <article class=""></article>
+    <aside class=""></aside>
+    <footer></footer>
 
 
     <hr>
@@ -106,10 +143,53 @@
             "alt" local attribute for alternative  message if image isn't to be displayed
             "width" attribute for image width in pixels
             "height" attribute for image height in pixels-->
-
     <img src="https://lh3.googleusercontent.com/-B7Ceuw70WHS9jq0DoKgCElppshuqbyWYjUQlEzhDL4F0x5RcOOgmJINNr7oFIENviCXOgGP-IOwbfhT6Exn4pk=s400" alt="">
     <img src="dogPic.jpg" alt="" width="200px" height="200px">
     <img src="../blablabla.png" alt="Image not found">
+
+
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
+    <!-- "audio" element for inserting an audio
+            "src" local attribute for audio source address / file name
+            "controls" local attribute to show audio controls
+            "autoplay" local attribute to autoplay the audio
+            "loop" local attributeto repeat the audio infinitly
+            "muted" local attribute to play the audio muted
+          "source" element for inserting a source - can be used multiple times so that the browser chooses what is compatable
+            "src" local attribute for audio source address / file name
+            "type" local attribute for mime type - "audio/mpeg" - "audio/ogg" - "audio/wav"-->
+    <audio controls>
+      <source src="Sample-OGG-File.ogg" type="audio/ogg">
+      <source src="guitar.mp3" type="audio/mpeg">
+      Your Browser doesn't support this audio  <!-- message in case of failiur-->
+    </audio>
+
+
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
+    <!-- "video" element for inserting an video
+            "src" local attribute for video source address / file name
+            "controls" local attribute to show video controls
+            "autoplay" local attribute to autoplay the video
+            "loop" local attributeto repeat the video infinitly
+            "muted" local attribute to play the video muted
+            "poster" default pic till the video loads
+            "width" attribute for image width in pixels
+            "height" attribute for image height in pixels
+          "source" element for inserting a source - can be used multiple times so that the browser chooses what is compatable
+            "src" local attribute for video source address / file name
+            "type" local attribute for mime type - "video/mp4" - "video/ogg"
+          "track" element to add tracks helping the video as subtitles
+            "src" attribute for video source address / file name
+            "kind" attribute for caption - description - subtitles - metadata
+            "srclang" attribute for the used language
+            "lable" attribute for labeling the track-->
+    <video controls muted width="600" height="400" poster="chocolatePic.png">
+      <source src="small.mp4" type="video/mp4">
+      <track kind="" src="sampleSubtitles_en.srt" srclang="en" label="English">
+      Your Browser doesn't support this video  <!-- message in case of failiur-->
+    </video>
 
 
     <hr>
@@ -122,7 +202,6 @@
               "type" attribute for the ordering type: A, a, 1, I, i
             "li" tag for list item
               "value" li attribute to start form certain number-->
-
     <ul>
       <li>HTML</li>
       <li>CSS</li>
@@ -136,10 +215,10 @@
       </li>
     </ul>
 
+
     <!-- "dl" element for description list
           "dt" term
           "dd" the description of the term-->
-
     <dl>
       <dt>Term 1</dt>
         <dd>description 1 of the first term</dd>
@@ -165,7 +244,6 @@
             "th" tag for table header cell row
             "td" tag for table data cell
               "colspan" for uniting two cells together-->
-
     <table border="1">
       <caption>My Table</caption>
       <thead>
@@ -200,13 +278,62 @@
       </tfoot>
     </table>
 
+
     <hr>
     <!--  -------------------------------------------------------------------- -->
-    <!--  "span" element to separate certain terms for further editing like paragraph user agent never modifies on it-->
-    <span></span>
+    <!-- Inputs
+        "form" tag for a group of dataset as inputs
+          "action" attribute for processing the data to a specific URL, default ="index.html"
+          "method" attribute for URL control "GET" shows info from URL, "POST" hides info from URL
+        "label" tag for labeling the input
+        "input" tag to insert an input
+          "placeholder" attribute shows a prewritten message for input
+          "value" attribute to give a default value to the input
+          "required" attribute to forces the user to fill the input to continue
+          "name" attribute for giving a name to the input for further usage
+          "readonly" attribute to noneditable input that is to be sent to further usage
+          "disabled" attribute to grey highlight noneditable input that is NOT to be send to further usage
+          "autofocus" attribute to force selection on an input first thing on page start 
+          "minlength" attribute to accept input of minimum X lenghth
+          "maxlength" attribute to accept input of maximum X lenghth
+          "type" attribute to mention the input type
+            "text" a type that takes text as input
+            "email" a type that allows only email forms
+            "password" a type that  shows stars to hide passwords
+            "submit" a type of button that acts as a button to submit the form for further usage
+            "reset" a type of button to reset inputs
+            "hidden" a type but hidden to the user
+            "color" a type to choose hex code
+            "range" a type to choose from a range
+              "min" an input attribute to choose minimum to the range
+              "max" an input attribute to choose maximum to the range
+              "step" an input attribute to set each step
+              "value" an input to set the default value
+            "number" a type to choose a number
+              "min" an input attribute to choose minimum to the number
+              "max" an input attribute to choose maximum to the number
+              "step" an input attribute to set each step
+        -->
+    <form class="" action="index.html" method="get">
+      <div>
+        <label>Username</label>
+        <input type="text" required value="user123" name="user"readonly>
+      </div>
+      <div>
+        <label>Subject</label>
+        <input type="text" name="Subject"autofocus>
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" required value="@joe.com" name="email" disabled> <!-- type="email" forces user to include @ to confirm an email-->
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" required placeholder="write a strong password" name="pass" minlength="10" maxlength="15">
+      </div>
+      <input type="submit" value="save"> <!-- to change button's name to "save"-->
+    </form>
 
-    <!-- "div" element division is kinda container for paragraphs and headings including spaces used for further editing -->
-    <div class=""></div>
 
 
   </body>
