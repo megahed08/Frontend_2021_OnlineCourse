@@ -503,6 +503,18 @@
       <input type="submit" value="save"> <!-- to change button's name to "save"-->
     </form>
 
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
+    <!--  Accessibility Basics
+      "role" an attribute to let the narrator know the roll of the tags
+      " aria-checked="true" " an attribute to let tag be prechosen
+      "aria-labelledby" an attribute to give a label to be linked with other id
+      " tabindex="0" " an attribute to let the tag be accessed by tab button-->
+
+      <div role="checkbox" aria-checked="true" aria-labelledby="plan1" tabindex="0">Plan One</div>
+      <label id="plan1">Plan One Label</label>
+      <div tabindex="0">Plan Two</div>
+      <div tabindex="0">Plan Three</div>
 
 
   </body>
