@@ -59,9 +59,43 @@
     <!--  -------------------------------------------------------------------- -->
     <!-- "p" element is for paragraphs, it differs than h element by separating the paragraph using spacing before and after the paragraph
             "lorem" types long paragraph automatically
-            "hidden" attribute hides text from user-->
+            "hidden" attribute hides text from user
+          "wbr" element to create a break line starting from its location in case the webpage width is small
+          "bdi" element to isolate a part of the paragraph from the rest to prevent confusion of numbers, Latin and Arabic letters
+          "pre" element to save the spacing and Breaklines of a paragraph
+          "code" element to write a code saving spaces to separate code from a normal text-->
+
     <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p hidden>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>https://www.youtube.com/<wbr>watch?v=AzjtVtxoBLc&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&index=33&ab_<wbr>channel=ElzeroWebSchoolElzeroWebSchoolVerified</p>
+    <p>2 السلام Welcome</p>
+    <p><bdi>السلام</bdi> 2 Welcome</p>
+
+    <p>This
+       is not
+       the preformated text</p>
+    <code>
+         var x = 2;
+         var y = 3;
+         console.log(x + y);
+    </code>
+
+    <pre>
+      <code>
+        var x = 2;
+        var y = 3;
+        console.log(x + y);
+      </code>
+    </pre>
+
+    <br><br>
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
+    <!-- "q" element is for quote, it differs than paragraph by having double quotations
+          "blockquote" element creating a quote not in double quotations but in a space block-->
+
+    <q >Lorem ipsum dolor sit amet.</p>
+    <blockquote> Lorem ipsum dolor sit amet.</blockquote>
     <br><br>
 
 
@@ -94,6 +128,7 @@
     <span></span>
 
 
+    <hr>
     <!--  -------------------------------------------------------------------- -->
     <!-- "div" block element division is kinda container for paragraphs and headings including spaces used for further editing -->
     <div class=""></div>
@@ -135,6 +170,13 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p id="link_ID"> Heeeeeeeere Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
+    <!-- "iframe" element for showing a full webpage in a box as a part of my webpage-->
+
+    <iframe src="https://studip.uni-passau.de/" width="600" height="300"></iframe>
+    <iframe src="Project1.html" width="600" height="300"></iframe>
 
     <hr>
     <!--  -------------------------------------------------------------------- -->
@@ -281,13 +323,20 @@
 
     <hr>
     <!--  -------------------------------------------------------------------- -->
+    <!--  "button" element to create a button-->
+<button type="button" name="button">Start</button>
+
+    <hr>
+    <!--  -------------------------------------------------------------------- -->
     <!-- Inputs
         "form" tag for a group of dataset as inputs
           "action" attribute for processing the data to a specific URL, default ="index.html"
           "method" attribute for URL control "GET" shows info from URL, "POST" hides info from URL
+          "novalidate" attribute to skip the validation of all the validable inputs in the form - useful for testing
+          "target" attribute to open new tab after submitting leaving the main tab opened full with the info - useful for testing
         "label" tag for labeling the input
           "for" an attribute to specify the lable for a specific id. Focuses the lable on the id action.
-        "select" a tag for slection list for choosing one or many options as an input
+        "select" a tag for slection list for choosing one or many options as an input - same as datalist but without search
           "multiple" an attribute to enabling multiple selections
           "optgroup" a tag to group up some selections within the list
             "lable" an attribute for naming the optgroup
@@ -310,6 +359,11 @@
           "maxlength" attribute to accept input of maximum X lenghth
           "checked" attribute to check a choice as default
           "id" attribute to give an input an id
+          "list" an attribute of a list to choose an option as an input - you can search by typing - same as select but with search and only one option
+            "datalist" a tag to insert the data in the lists
+              "id" an attribute that should have the same name as the list name
+              "option" a tag to insert each selection
+                "value" an attribute to give the value of each option
           "type" attribute to mention the input type
             "text" a type that takes text as input
             "email" a type that allows only email forms
@@ -394,6 +448,31 @@
           </optgroup>
         </select>
       </div>
+      <br><br>
+      <div>
+        <label for="book">Choose Book</label>
+        <select id="book" name="book" >
+          <optgroup label="Romantic Books">
+            <option value="1">Book1</option>
+            <option value="2">Book2</option>
+            <option value="3">Book3</option>
+          </optgroup>
+        </select>
+      </div>
+      <br><br>
+      <div>
+        <input list="programming" name="prog" >
+          <datalist id="programming">
+            <option value="Java"></option>
+            <option value="Python"></option>
+            <option value="PHP"></option>
+            <option value="C"></option>
+            <option value="C++"></option>
+            <option value="C#"></option>
+            <option value="Groovy"></option>
+          </datalist>
+      </div>
+      <br><br>
       <div>
         <textarea name="name" rows="8" cols="80" placeholder="Test Text"></textarea>
       </div>
